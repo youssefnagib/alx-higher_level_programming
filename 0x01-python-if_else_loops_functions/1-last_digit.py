@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-Last = abs(number) % 10
+Last = number % 10
 if Last == 0:
     print("Last digit of {} is {} and is 0".format(number, Last))
 elif Last > 5:
