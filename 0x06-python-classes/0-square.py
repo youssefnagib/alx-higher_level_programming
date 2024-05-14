@@ -4,5 +4,5 @@
 
 
 class Square:
-    """pass"""
+    """pass square"""
     pass
