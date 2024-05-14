@@ -30,8 +30,7 @@ class Square:
         if self.__size == 0:
             print("")
         else:
-
-            for row in self.__size:
-                for col in self.__size:
+            for row in range(self.__size):
+                for col in range(self.__size):
                     print("#", end="")
                 print("")
