@@ -23,6 +23,10 @@ class Square:
             self.__size = value
         else:
             print("size must be an integer")
-
+    
+    @property
+    def size(self):
+        return self.__size
+    
     def area(self):
         return self.__size ** 2
