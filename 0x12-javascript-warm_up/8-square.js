@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const row = process.argv[2];
+const row = parseInt(process.argv[2]);
 if (!Number(row)) {
   console.log('Missing size');
 } else {
