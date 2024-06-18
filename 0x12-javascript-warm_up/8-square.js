@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const row = parseInt(process.argv[2]);
+const row = Math.floor(Number(process.argv[2]));
 if (isNaN(row)) {
   console.log('Missing size');
 } else {
