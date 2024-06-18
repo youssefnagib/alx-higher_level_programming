@@ -1,16 +1,16 @@
 #!/usr/bin/node
-const x = process.argv[2];
-if (!Number(x)) {
+const row = process.argv[2];
+if (!Number(row)) {
   console.log('Missing size');
 } else {
   let z = 0;
-  let row = '';
-  while (z < x) {
-    for (let i = 0; i < x; i++) {
-      row += 'x';
+  let x = '';
+  while (z < row) {
+    for (let i = 0; i < row; i++) {
+      x += 'x';
     }
-    console.log(row);
-    row = '';
+    console.log(x);
+    x = '';
     z += 1;
   }
 }
