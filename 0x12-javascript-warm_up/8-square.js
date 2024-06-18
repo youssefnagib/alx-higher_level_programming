@@ -5,7 +5,7 @@ if (isNaN(row)) {
 } else {
   let z = 0;
   while (z < row) {
-      let x = '';
+    let x = '';
     for (let i = 0; i < row; i++) {
       x += 'x';
     }
