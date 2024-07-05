@@ -1,4 +1,14 @@
 #!/usr/bin/python
+"""
+    This function finds the peak element in a list of integers using a divide and conquer approach.
+    The peak element is defined as an element that is greater than its neighboring elements.
+
+    Parameters:
+    list_of_integers (List[int]): A list of integers.
+
+    Returns:
+    int: The peak element in the list. If the list is empty or contains only one element, it returns that element.
+"""
 def find_peak(list_of_integers):
     if not list_of_integers:
         return None
