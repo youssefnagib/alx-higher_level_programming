@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
     This function finds the peak element in a list of integers using a divide and conquer approach.
     The peak element is defined as an element that is greater than its neighboring elements.
