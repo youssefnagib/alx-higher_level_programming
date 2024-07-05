@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 """
+finds the peaks 
+"""
+
+def find_peak(list_of_integers):
+    """ 
     This function finds the peak element in a list of integers
     using a divide and conquer approach.
     The peak element is defined as an element that is greater
@@ -10,12 +15,7 @@
 
     Returns:
     int: The peak element in the list. If the list is empty
-    or contains only one element, it returns that element.
-"""
-
-
-def find_peak(list_of_integers):
-    """ finds a peak in a list of unsorted integers."""
+    or contains only one element, it returns that element."""
     if not list_of_integers:
         return None
     elif len(list_of_integers) == 1:
