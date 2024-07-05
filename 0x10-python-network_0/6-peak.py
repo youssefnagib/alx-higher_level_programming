@@ -10,6 +10,7 @@
     int: The peak element in the list. If the list is empty or contains only one element, it returns that element.
 """
 def find_peak(list_of_integers):
+    """ finds a peak in a list of unsorted integers."""
     if not list_of_integers:
         return None
     elif len(list_of_integers) == 1:
