@@ -14,17 +14,19 @@ def find_peak(list_of_integers):
 
     Returns:
     int: The peak element in the list. If the list is empty
-    or contains only one element, it returns that element."""
+    or contains only one element, it returns that element.
+    """
+    ln = len(list_of_integers)
     if not list_of_integers:
         return None
-    elif len(list_of_integers) == 1:
+    if ln == 1:
         return list_of_integers[0]
+    mid = ln // 2
+    if (mid == 0 or list_of_integers[mid] >= list_of_integers[mid - 1]) and\
+            (mid == ln - 1 or
+                list_of_integers[mid] >= list_of_integers[mid + 1]):
+        return list_of_integers[mid]
+    elif mid > 0 and list_of_integers[mid] < list_of_integers[mid - 1]:
+        return find_peak(list_of_integers[:mid])
     else:
-        mid = len(list_of_integers) // 2
-        if (list_of_integers[mid] > list_of_integers[mid - 1] and
-                list_of_integers[mid] > list_of_integers[mid + 1]):
-            return list_of_integers[mid]
-        elif list_of_integers[mid] > list_of_integers[mid - 1]:
-            return find_peak(list_of_integers[mid:])
-        else:
-            return find_peak(list_of_integers[:mid])
+        return find_peak(list_of_integers[mid + 1:])
