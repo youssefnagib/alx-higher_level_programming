@@ -3,8 +3,6 @@
     _A Python script that fetches https://alx-intranet.hbtn.io/status_
 """
 
-import urllib.request
-
 
 if __name__ == "__main__":
     import urllib.request
