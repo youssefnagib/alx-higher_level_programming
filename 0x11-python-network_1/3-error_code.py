@@ -10,9 +10,9 @@ if __name__ == '__main__':
 
     url = sys.argv[1]
     try:
-        request = request.Request(url)
+        requests = request.Request(url)
 
-        with request.urlopen(request) as response:
+        with request.urlopen(requests) as response:
             body = response.read().decode('utf-8')
             print(body)
     except error.HTTPError as error:
