@@ -10,7 +10,6 @@ if __name__ == "__main__":
     import urllib.parse
     import sys
 
-
     url = sys.argv[1]
     email = sys.argv[2]
 
